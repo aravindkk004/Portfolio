@@ -8,15 +8,33 @@ import tictactoe from "./../../images/tictactoe.png";
 import drum from "./../../images/drum.png";
 import Notes from "./../../images/notes.png";
 import Weather from "./../../images/weather.png";
-import talencrafter from "./../../images/talencrafter.png"
-import picportal from "./../../images/picportal.png"
-import aigen from "./../../images/aigen.png"
+import talencrafter from "./../../images/talencrafter.png";
+import picportal from "./../../images/picportal.png";
+import aigen from "./../../images/aigen.png";
+import budgetbuddy from "./../../images/budgetbuddy.png";
+import mockMasterUI from "./../../images/mock-master-ui.png";
 
 const Projects = () => {
   return (
     <section id="projects">
       <h3>Projects</h3>
       <div className="project-items">
+        <Project
+          title={"Mock Master"}
+          by={"Next JS"}
+          img={mockMasterUI}
+          live={"https://aravindkk-mockmaster.vercel.app/"}
+          git={
+            "https://github.com/aravindkk004/MockMaster-Ai-Mock-Interviewer-"
+          }
+        />
+        <Project
+          title={"BudgetBuddy"}
+          by={"Next JS"}
+          img={budgetbuddy}
+          live={"https://aravindkk-budgetbuddy.vercel.app/"}
+          git={"https://github.com/aravindkk004/BudgetBuddy"}
+        />
         <Project
           title={"TalenCrafter"}
           by={"EJS"}
