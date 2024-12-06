@@ -1,0 +1,88 @@
+#contact{
+    display: flex;
+    gap: 40px;
+    padding: 100px 0px 70px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftcontact, .rightcontact{
+    flex-basis: 50%;
+}
+.social-icon{
+    display: flex;
+    gap: 10px;
+}
+.leftcontact{
+    padding: 0px 20px;
+}
+
+.leftcontact h3{
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+
+.leftcontact p{
+    color: #ADB7BE;
+    margin: 15px 0px;
+}
+.rightcontact form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightcontact form input, .rightcontact form textarea{
+    width: 70%;
+    height: 40px;
+    padding: 5px;
+    font-size: 1rem;
+    margin: 15px 0px;
+    border-radius: 8px;
+    border: 2px solid lightblue;
+    outline: none;
+    color: black;
+}
+
+.rightcontact form input:focus, .rightcontact form textarea:focus{
+    border-color: #7e61e7;
+}
+
+.rightcontact form textarea{
+    height: 150px;
+    resize: none;
+}
+
+.rightcontact button{
+    width: 70%;
+    background-color: #7e61e7;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    height: 40px;
+    margin: 10px 0px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+@media all and (max-width: 830px){
+    .leftcontact,.rightcontact{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    #contact{
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 430px){
+    .rightcontact form input, .rightcontact form textarea,.rightcontact button{
+        width: 90%;
+    }
+}

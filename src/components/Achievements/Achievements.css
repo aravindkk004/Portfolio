@@ -1,0 +1,76 @@
+ #achievements{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px 50px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+#achievements h3{
+    font-size: 2.3rem;
+    font-weight: bolder;
+    margin: 20px 0px;
+}
+
+.options{
+    display: flex;
+    gap: 20px;
+}
+
+.options h4{
+    font-size: 1rem;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.options h4 button::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #7271e7;
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+
+.options h4 button:hover::after{
+    width: 100%;
+}
+
+.achievements{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.achievement{
+    min-width: 350px;
+    max-width: 400px;
+    flex: 1;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #1f2937;
+}
+
+.achievement h2{
+    font-size: 1.4rem;
+    color: #7271e7;
+    font-weight: bolder;
+    margin: 10px 0px;
+}
+
+.com-desc{
+    color: #ADB7BE;
+}
+
+.achievement a{
+    color: lightblue;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
